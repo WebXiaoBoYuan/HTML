@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				color: yellow;         通配选择器
+			}
+			p{
+				color: blue;            元素选择器
+			}
+			span{
+				color: brown;
+			}
+			div{
+				color: chartreuse;
+			}
+			h1{
+				color: beige;
+			}
+			
+			
+			
+			.text{
+				color: cadetblue;
+			}
+			.section{
+				color: red;后来者居上,同时两个颜色,用后面的
+			}
+			.section.text{.代表class              class选择器
+				color: aqua;
+			}
+			
+			
+			
+			#page-title{#代表id        id选择器
+				color: #FFFF00;
+			}
+			
+			
+			.list1,.list2{   群组选择器,class选择器
+				color: red;
+			}
+			
+			
+			
+			
+			
+			#ul1.love1{
+				color: cadetblue;包含选择器
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<p id="page-title">咋的</p>css类名不能以数字开头，可以用横岗和下划线-——
+		
+		
+		<p>
+			这是p
+		</p>
+		<p>
+			这是第二个p
+		</p>
+		<span>
+			这是span
+		</span>
+		<div>
+			这是div
+		</div>
+		<h1>
+			这是h1
+		</h1>
+		
+		
+		
+		<p class="text">这是text类</p>
+		<p class="section">这是一个section类</p>
+		<p class="section text">这是一个class和section都有的标签</p>
+		
+		
+		
+		<ul>
+			<li class=list1>这是一</li>
+			<li class=list1>这是一</li>
+			<li class=list1>这是一</li>
+		</ul>
+		<ul>
+		    <li class=list2>这是二</li>
+		    <li class=list2>这是二<</li>
+		    <li class=list2>这是二<</li>
+		</ul>
+		
+		
+		<ul id="ul1">
+			<li class="love1">风</li>
+			<li class="love1">云</li>
+			
+		<ul id="ul2">
+			<li class="love2"></li>
+			<li class="love2"></li>
+		</ul>
+		
+	</body>
+</html>

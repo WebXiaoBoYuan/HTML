@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#ul3>.list4{子选择器
+			color: blanchedalmond;         相邻兄弟选择器只选择一个+
+			                                通用选择器选择同级的所有的~                都对后面的有效
+			}
+			
+			
+			.for1~li{
+				color: #FF0000;
+			}
+			
+			
+			[target=_parent]{
+				color: aqua;
+			}
+			
+			
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		
+		<ul id="ul3">
+			<li class="list4">黄</li>
+				
+		</ul>
+		<p class="list5">鸟</p>
+		
+		
+		
+		
+		<ul>
+			<li> 不行啊</li>
+			<li class="for1"> 第一个li</li>           相邻兄弟选择器+
+			<li > 第二个li</li>                         通用选择器~
+			<li > 第三个li</li>
+		</ul>
+		
+		
+		
+		
+		
+		<a href="" target="_blank">声</a>
+		<a href="" target="_parent">名</a>
+		
+		
+		
+	
+		
+	</body>
+</html>

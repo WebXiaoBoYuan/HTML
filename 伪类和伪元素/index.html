@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>伪类和伪元素</title>
+		<style type="text/css">
+			a:link{
+				color: red;
+			}
+			a:visited{
+				color: green;
+			}
+			a:hover{
+				color: yellow;
+				background-color: aqua;
+			}
+			a:active{
+				color: #FF4500;
+			}
+			
+			
+			
+			.weilei{
+				width: 100px;
+				height: 100px;
+				background-color: #FFDAB9;
+			}
+			/*.weilei:active{
+				background-color: black;*/
+			/*}*/
+			.weilei:hover{
+				background-color: green;
+				border-radius: 50%;
+			}
+			#wei2{
+				width: 50px;
+				height: 50px;
+				background-color: #000000;
+
+			}
+			.weilei:hover #wei2{
+				background-color: #FFFF00;
+				border-radius: 50%;
+			}
+			#shi:focus{
+				background-color: #7FFF00;
+				border-color: #000000;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p>伪类：一种响应操作的样式</p>
+		<a href="http://www.baidu.com">百度
+			<a href="http:www.shubao.com">书包</a>
+			
+		</a>
+		<p>link，点击时显示红色</p>
+		<p>visited改变已访问标签的颜色</p>
+		<p>hover，改变选中标签时的颜色</p>
+		<p>active，向选定的标签添加样式</p>
+		<p>a标签的定义必须按照顺序来，就是上面的顺序</p>
+		<p>伪元素不在页面中存在但是能看见，before，after</p>
+		
+		
+		
+		
+		
+		<div class="weilei">
+			<div id="wei2">
+				
+			</div>
+			
+		</div>
+		<p>伪类中active代表选中时的颜色</p>
+		<input type="text" name="shi" id="shi" value="" />
+		<p>focus代表输入标签被选中时的样式，border-color代表边框颜色</p>
+		<p>hover是最常用的伪类，可以为任何元素添加任何属性</p>
+		
+	</body>
+</html>

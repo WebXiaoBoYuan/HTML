@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#d1:before{
+				content :"风";
+				display: block ;
+				visibility: hidden;
+			}
+			#d1:after{
+				content:"这是一段文本";
+				display: block;
+				padding: 20px;
+				border: solid black 1px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+			这是真正在页面中存在的div的文字
+			
+		</div>
+		<p>before和after加的伪元素必须加上引号，图片不用加引号,音乐要加引号;伪元素不能被选定</p>
+	</body>
+</html>
